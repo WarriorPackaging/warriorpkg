@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    background-color: #171717;
+    font-family: 'Merriweather', serif;
+}
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #262626;
+}
+header {
+    width: 100%;
+    height: 152px;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #171717;
+}
+#logo {
+    width: 131px;
+    height: 152px;
+    background-image: url(image/logowht.png);
+    margin: inherit;
+}
+nav {
+    width: 100%;
+    margin-top: -15px;
+    text-align: center;
+    background-color: #666666;
+}
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+nav li.active {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+nav li:hover {
+    background-color: #171717;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: -1px;
+    width: inherit;
+    z-index: 10;
+}
+.sticky + .slideshow-container {
+    padding-top: 60px;
+}
+.sticky + main {
+    padding-top: 60px;
+}
+/*SLIDESHOW*/
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: -15px;
+    height: 400px;
+}
+/*Caption text*/
+.caption {
+    margin-top: -225px;
+    font-size: 300%;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*/SLIDESHOW*/
+#mobilebanner {
+    display: none;
+}
+#banner {
+    width: 100%;
+    height: 75px;
+    padding: 50px 0;
+    margin: auto;
+    background-color: #666666;
+
+}
+#banner p {
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    margin: auto;
+    font-size: 200%;
+}
+#banner a {
+    color: #171717;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #cccccc;
+    margin-left: 10%;
+    font-size: .75em;
+    text-decoration: none;
+    transition: background-color 2s, box-shadow 1s;
+}
+#banner a:hover {
+    background-color: #cccccc;
+    box-shadow: none;
+}
+main {
+    padding: 20px 40px;
+    min-height: 400px;
+}
+main h2 {
+    text-align: center;
+}
+footer {
+    width: 40%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+#footerlogo {
+    width: 131px;
+    height: 152px;
+    background-image: url(image/logowht.png);
+    margin: 10px auto 0;
+}
+#social {
+    width: 105px;
+    margin: auto;;
+    padding: 10px 0;
+}
+#social img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+/*PRODUCTS PAGE*/
+.gallery {
+    position: relative;
+}
+.gallery ul {
+    list-style-type: none;
+    width: 300px;
+    height: 450px
+}
+.gallery li {
+    display: inline; 
+    float: left;
+    padding: 10px; 
+}
+.gallery img {
+    border-style: none;
+}
+.gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #FFFFFF;
+    background-color: #666666;
+    padding: 5px;
+}
+.gallery span { 
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition:  opacity 3s ease-in-out; 
+}
+.gallery a:hover span {     
+    position: absolute;
+    top: 16px;
+    left: 320px; 
+    text-align: center; 
+    opacity: 1; 
+}
+figure {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 280px;  
+    background-color: #666666;
+    opacity: .5;
+}
+figure div {
+    text-align: center;
+    padding: 100px 0;
+}
+#departments {
+    margin-top: 0px;
+}
+#departments a {
+    color: inherit;
+}
+#departments a:hover {
+    color: #999999;
+}
+#departments button {
+    width: auto;
+    height: 30px;
+    margin: 10px;
+}
+#foams {
+    display: none;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+thead {
+    background-color: #666666;
+}
+table td {
+    border: 2px solid #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+table ul {
+    text-align: left;
+}
+#mobilegallery {
+    display: none;
+}
+/*CONTACT PAGE*/
+#contact {
+    margin: auto;
+    width: 60%;
+}
+
+#contact li span {
+    position: relative;
+    left: -5px;
+    top: -8px;
+}
+#contact a {
+    color: inherit;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #999999;
+}
+#contactinfo {
+    float: left;
+}
+#contactinfo li {
+    padding: 0 10px;
+}
+#contactform {
+    float: right;
+}
+.address {
+    list-style-image: url(image/address.png);
+}
+.phonemobile, .phonedesktop {
+    list-style-image: url(image/phone.png);
+}
+.phonemobile {
+    display: none;
+}
+.fax {
+    list-style-image: url(image/fax.png);
+}
+.customer {
+    list-style-image:  url(image/name.png);
+}
+.email {
+    list-style-image: url(image/email.png);
+}
+.message {
+    list-style-type: none;
+}
+textarea {
+    margin-top: 10px;
+}
+#submit {
+    width: 5em;
+    height: 2em;
+}
+#map {
+    width: 80%;
+    margin: auto;
+}
+@media only screen and (max-width: 64em) {
+    .wrapper {
+        width: 90%
+    }
+    nav li {
+        font-size: 1.23em;
+    }
+    #banner {
+        padding: 50px 0 75px
+    }
+    #desktopbanner {
+        display: none;
+    }
+    #mobilebanner {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    #mobilebanner a {
+        margin: 0;
+    }
+    .gallery {
+        display: none;
+    }
+    #mobilegallery{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    /*CONTACT PAGE*/
+    #contact {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 38em) {
+    .wrapper {
+        width: 100%;
+    }
+    nav li{
+        font-size: 1em;
+        padding: 10px;
+    }
+    main {
+        padding: auto;
+    }
+    #mobilegallery .left, .right {
+        float: none;
+    }
+    /*CONTACT PAGE*/
+    #contactinfo, #contactform {
+        float: none;
+        padding: 5% 10%;
+    }
+    #contactinfo li {
+        margin-left: 12px;
+    }
+    .phonemobile {
+        display: list-item;
+    }
+    .phonedesktop {
+        display: none;
+    }
+    form {
+        margin-left: 20px;
+    }
+}

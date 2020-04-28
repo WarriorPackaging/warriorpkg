@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Warrior Industrial Packaging, Inc.</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="warrior.css">
+</head>
+<body>
+
+<div class="wrapper">
+<header>
+    <div id="logo"></div>
+</header>
+
+<div id="navbar">
+<nav>
+    <ul>
+    <a href="index.html"><li class="active">HOME</li></a>
+    <a href="products.html"><li>PRODUCTS</li></a>
+    <a href="contact.html"><li>CONTACT</li></a>
+    </ul>
+</nav>
+</div>
+
+<!--SLIDESHOW-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/slide1.jpg">
+    <div class="caption">Warrior Industrial Packaging Inc.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="image/slide2.jpg">
+    <div class="caption">Warrior Industrial Packaging Inc.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="image/slide3.jpg">
+    <div class="caption">Warrior Industrial Packaging Inc.</div>
+</div>
+
+</div>
+<!--/SLIDESHOW-->
+
+<div id="banner">
+<div id="desktopbanner">
+<p>
+Fighting for your packaging needs
+<a href="contact.html">Contact Us</a>
+</p>
+</div>
+<div id="mobilebanner">
+<p>Fighting for your packaging needs</p>
+<p><a href="contact.html">Contact Us</a></p>
+    </div>
+</div>
+  
+<main>
+<h2>About Us</h2>
+These days, it's not enough to generate great sales. You need to reduce costs as well - and without impacting quality.
+<br><br>
+Warrior Industrial Packaging has focused on delivering great sales material while constantly refining processes and reducing costs. 
+<br><br>
+We have over 25 years of experience in the packaging industry. We offer custom crates and foam packaging, from simple to complex, big or small orders.
+<br><br>
+We also have in stock a numerous range of stock boxes and shipping supplies such as: tape, stretch film, bubble pack, etc. Call today to receive your free catalog which contains the full line of shipping supplies.
+<br><br>
+Warrior Industrial Packaging consistently reduces production costs, and we'd like the chance to do the same for you. 
+<br><br>
+Our wood shop is ISPM 15 Certified and audited every month.
+<br><br>
+We would like the opportunity to show how our experience can be put to work for you. We look forward to contributing to your future.
+</main>
+</div>
+    
+<footer>
+    <div id="footerlogo"></div><br>
+    <div id="social">
+        <a href="https://www.facebook.com/WarriorPkg/" target="_blank">
+        <img src="image/facebook.png"></a>
+        
+        <a href="https://twitter.com/warriorpkg?lang=en" target="_blank">
+        <img src="image/twitter.png">
+        </a>
+    </div>
+    Copyright&copy; 2020 Warrior Industrial Packaging Inc.
+</footer>
+    
+<script>
+// SLIDESHOW
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+// STICKY NAVBAR
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function showhide() {
+  var x = document.getElementById("foams");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    
+</body>
+</html>

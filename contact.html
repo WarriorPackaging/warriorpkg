@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Warrior Industrial Packaging, Inc.</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="warrior.css">
+</head>
+<body>
+
+<div class="wrapper">
+<header>
+    <div id="logo"></div>
+</header>
+
+
+<div id="navbar">
+<nav>
+    <ul>
+    <a href="index.html"><li>HOME</li></a>
+    <a href="products.html"><li>PRODUCTS</li></a>
+    <a href="contact.html"><li class="active">CONTACT</li></a>
+    </ul>
+</nav>
+</div>
+
+<main>
+
+<div id="contact">
+<div id="contactinfo">
+<h2>Contact Information</h2>
+    
+<ul>
+    <li class="address"><span><a href="https://goo.gl/maps/aqQsToLVV3BinFUy6" target="_blank">3241 Forrest View Road <br> Rockford, IL 61020</a></span></li>
+    <li class="phonemobile"><span><a href="tel:8157511325">(815)-381-0714</a></span></li>
+    <li class="phonedesktop"><span>(815)-381-0714</span></li>
+    <li class="fax"><span>(815)-381-0711</span></li>
+</ul>
+</div>
+
+<div id="contactform">
+<h2>Send us a message.</h2>
+
+<form action="mailto:info@warriorpkg.com" method="post" enctype="multipart/form-data" name="ContactForm">
+    <li class="customer"><span><label for="customer"></label>
+    <input required type="text" id="customer" placeholder="Your Name"></span></li>
+    <li class="email"><span><label for="email" class="email"></label>
+    <input required type="email" id="email" placeholder="Your Email"></span></li>
+    <label for="message"></label>
+    <li class="message"><span><textarea required name="message" rows="6" cols="21" placeholder="Your Message"></textarea></span></li>
+    <input id="submit" type="submit" value="Send">
+</form>
+</div>
+</div>
+</main>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.0364630590193!2d-89.02413904853118!3d42.23503397909343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8808bf5430fc7d53%3A0x1eca4607ece27454!2sWarrior%20Industrial%20Packaging!5e0!3m2!1sen!2sus!4v1583375460473!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+    
+<footer>
+    <div id="footerlogo"></div><br>
+    <div id="social">
+        <a href="https://www.facebook.com/WarriorPkg/" target="_blank">
+        <img src="image/facebook.png"></a>
+        
+        <a href="https://twitter.com/warriorpkg?lang=en" target="_blank">
+        <img src="image/twitter.png">
+        </a>
+    </div>
+    Copyright&copy; 2020 Warrior Industrial Packaging Inc.
+</footer>
+
+<script>
+// STICKY NAVBAR
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
